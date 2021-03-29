@@ -1,6 +1,35 @@
-# Lazyloading
+# Project name: Lazyloading
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+
+
+## Objetivo
+
+Ser um exemplo de Lazy Loading
+
+# Exemplos
+
+## Comandos do Angular Cli
+
+Gera um módulo sem lazy loading
+
+```
+ng g module pages --module app --routing false
+```
+
+Gera um módulo com lazy loading
+1. Nomeado "agenda"
+2. Referenciado no AppModule
+3. Lazyloaded direcionado para a rota "agenda"
+4. Gera roteamento
+
+```
+ng g module agenda --module app --route agenda --routing true
+```
+
+
+
 
 ## Development server
 
@@ -25,3 +54,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+

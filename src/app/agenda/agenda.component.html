@@ -1,0 +1,11 @@
+<h2>Agenda</h2>
+
+<h3>Change emoji size</h3>
+<mat-slider
+  min="20"
+  max="50"
+  step="1"
+  [thumbLabel]="true"
+  (input)="onInputChange($event)"
+></mat-slider>
+<span class="emoji" [ngStyle]="{ 'font-size.px': size }">📅</span>
